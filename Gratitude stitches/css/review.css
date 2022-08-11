@@ -1,0 +1,80 @@
+.review{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.review-container .review-text{
+    font-size: 35px;
+    margin-left: 70px;
+    
+}
+
+.review-container .review-card{
+    width: 260px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 7px 5px 20px gray;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin: 50px 40px;
+    position: relative;
+}
+
+.review-container .review-card>img{
+    width: 100px;
+    border-radius: 360px;
+    margin-bottom: 20px ;
+
+}
+
+.review-card:hover{
+    transition: .5s all;
+    margin-bottom: 90px;
+    cursor: pointer;
+}
+
+.review-card .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.089);
+    position: absolute;
+    border-radius: 8px;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.review-card .overlay:hover{
+    background: rgb(26, 211, 26);
+    transition: .5s all;
+    opacity: 1;
+}
+
+.review-card .overlay .overlay-text{
+    color: white;
+    margin-top: 50px;
+}
+
+.overlay .overlay-text .title{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.overlay .overlay-text .job{
+    font-size: 18px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    scroll-behavior: smooth;
+    height: 300vh;
+}
+:root{
+    --main-color :#4CAF50 ;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+li{
+    font-family: 'Montserrat', sans-serif;
+}
+.contents{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 200;
+}
+.secimg{
+    /* margin-top: -70px; */
+    transform: translateY(-110px);
+    background: linear-gradient(rgba(0, 0, 0, 0.669), rgba(0, 0, 0, 0.674)), url(../img/someimages/serimg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+}
+.ser-content{
+    padding-top: 230px;
+    margin-left: 50px;
+}
+.ser-content h3{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+}
+.sertext-img{
+    margin-left: 50px;
+    line-height: 100px;
+}
+.correct{
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+.tick{
+    display:flex;
+    gap: 10px;
+    text-align: center;
+}
+.ticks{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.tick p{
+    margin-top: 3px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+.text-circle{
+    width: 35px;
+    height: 35px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+.sertexts{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.sertexts h2{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.serpara{
+    /* width: min(80%, 400px) ; */
+    font-family: 'Nunito', sans-serif;
+    margin-left: 60px;
+    text-align: left;
+}
+.allfirstimgtext{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+}
+.firstimgtext{
+    /* margin-left: 80px; */
+    margin-top: 20px;
+}
+.firstimgtext:hover{
+    cursor:context-menu;
+}
+.firstimgtext:hover .sertexts h2 {
+    color: #4CAF50;
+}
+.firstimgtext:hover .text-circle{
+    background: none;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+@media (max-width: 1020px) {
+    .firstimg{
+        width: 90%;
+    }
+    .text-circle{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    .sertexts{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .serpara{
+        /* width: 60%; */
+        font-family: 'Nunito', sans-serif;
+        margin-left: 55px;
+        text-align: left;
+    }
+}
+
+.chooseus{
+    margin-top: 200px;
+}
+
+.reason{
+    display: flex;
+    justify-content: space-around;
+    gap: -100px;
+    flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+    .allfirstimgtext {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+    .firstimg {
+        width: min(400px, 90%) ;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 100px;
+    }
+    .reason{
+        gap: -100px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .reason{
+        gap: 20px;
+        align-items: center;
+    }
+}
+@media (max-width: 400px) {
+   .ticks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.reason{
+    gap: 50px;
+    align-items: center;
+
+}
+}
